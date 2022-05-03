@@ -1,7 +1,6 @@
 import { useState } from 'react';
+import { Widget } from './components/Widget';
 
-function App() {
-  return <div className='text-violet-600'>Hello World</div>;
+export function App() {
+  return <Widget />;
 }
-
-export default App;
