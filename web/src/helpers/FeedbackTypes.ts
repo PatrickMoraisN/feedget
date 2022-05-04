@@ -2,6 +2,8 @@ import bugImageUrl from '../assets/bug.svg';
 import ideaImageUrl from '../assets/idea.svg';
 import thoughtImageUrl from '../assets/thought.svg';
 
+export type FeedbackTypeProps = keyof typeof feedbackTypes;
+
 export const feedbackTypes = {
   BUG: {
     title: 'Problema',
