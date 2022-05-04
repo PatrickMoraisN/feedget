@@ -36,5 +36,6 @@ module.exports = {
     'no-unused-vars': 0,
     camelcase: 0,
     'class-methods-use-this': 0,
+    'global-require': 0,
   },
 };
