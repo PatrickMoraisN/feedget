@@ -7,11 +7,13 @@ import { CameraButton } from '../CameraButton';
 type FeedbackContentStepProps = {
   feedbackType: FeedbackTypeProps;
   onFeedbackRestartRequested: () => void;
+  onFeedbackSent: () => void;
 };
 
 export function FeedbackContentStep({
   feedbackType,
   onFeedbackRestartRequested,
+  onFeedbackSent,
 }: FeedbackContentStepProps) {
   const feedbackTypeInfo = feedbackTypes[feedbackType];
   const [screenshot, setScreenshot] = React.useState<string | null>(null);
@@ -20,6 +22,7 @@ export function FeedbackContentStep({
   const handleSubmitFeedback = (e: FormEvent) => {
     e.preventDefault();
 
+    onFeedbackSent();
     console.log(screenshot);
     console.log(commentFeedback);
   };
