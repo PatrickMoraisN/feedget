@@ -24,5 +24,7 @@ module.exports = {
     camelcase: 0,
     'class-methods-use-this': 0,
     'global-require': 0,
+    'no-useless-constructor': 0,
+    'no-empty-function': 0,
   },
 };
