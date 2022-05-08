@@ -23,8 +23,6 @@ export function FeedbackContentStep({
     e.preventDefault();
 
     onFeedbackSent();
-    console.log(screenshot);
-    console.log(commentFeedback);
   };
 
   return (
