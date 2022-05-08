@@ -1,7 +1,7 @@
 import { Camera, Trash } from 'phosphor-react';
 import React from 'react';
 import html2canvas from 'html2canvas';
-import { Loading } from './Loading';
+import { Loading } from '../Loading';
 
 type CameraButtonProps = {
   onScreenshot: (base64: string | null) => void;

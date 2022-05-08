@@ -1,4 +1,3 @@
-import { CodeSimple } from 'phosphor-react';
 import React from 'react';
 import { CloseButton } from '../CloseButton';
 
