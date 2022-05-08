@@ -1,6 +1,8 @@
 import { MailAdapter } from '../../adapters/mail-adapter';
 import { FeedbacksRepository } from '../../repositories/feedbacks-repository';
 import { SubmitFeedbackServiceRequest } from './SubmitFeedbackServiceRequest';
+import * as ErrorMsg from '../../helpers/errorMessages';
+import { imageStartFormat } from '../../helpers/imageStartFormat';
 
 export class SubmitFeedbackService {
   constructor(
@@ -10,6 +12,17 @@ export class SubmitFeedbackService {
 
   async execute(request: SubmitFeedbackServiceRequest) {
     const { type, comment, screenshot } = request;
+
+    if (!type) {
+      throw new Error(ErrorMsg.invalidType);
+    }
+    if (!comment) {
+      throw new Error(ErrorMsg.invalidComment);
+    }
+
+    if (!screenshot || !screenshot.startsWith(imageStartFormat)) {
+      throw new Error(ErrorMsg.invalidScreenshot);
+    }
 
     await this.feedbackRepository.create({
       type,
