@@ -52,7 +52,7 @@ export function FeedbackContentStep({
 
       <form className='my-4 w-full' onSubmit={handleSubmitFeedback}>
         <textarea
-          className='min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-2 outline-none border-zinc-600 bg-transparent rounded-md focus:border-brand-500 p-4 resize-none scrollbar scrollbar-thumb-brand-500 scrollbar-track-transparent scrollbar-thin textarea-widget'
+          className='min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-2 outline-none border-zinc-600 bg-transparent rounded-md focus:border-brand-500 p-4 resize-none scrollbar-thumb-brand-500 scrollbar-track-transparent scrollbar-thin textarea-widget'
           placeholder='Conte com detalhes o que está acontecendo...'
           onChange={(e) => setCommentFeedback(e.target.value)}
         />
