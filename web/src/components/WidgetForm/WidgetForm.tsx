@@ -1,9 +1,7 @@
 import React from 'react';
-import { FeedbackTypeProps, feedbackTypes } from '../helpers';
-import { CloseButton } from './CloseButton';
-import { FeedbackTypeSteps } from './FeedbackTypeSteps';
-import { FeedbackContentStep } from './steps';
-import { FeedbackSuccessStep } from './steps/FeedbackSuccessStep';
+import { FeedbackTypeProps } from '../../helpers';
+import { FeedbackTypeSteps } from '../FeedbackTypeSteps';
+import { FeedbackContentStep, FeedbackSuccessStep } from '../steps';
 
 export function WidgetForm() {
   const [feedbackType, setFeedbackType] =
