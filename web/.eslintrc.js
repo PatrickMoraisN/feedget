@@ -17,6 +17,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
+  ignorePatterns: ['*.spec.tsx'],
   rules: {
     'react/prop-types': 0,
     'react/jsx-filename-extension': 0,

@@ -10,6 +10,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  ignorePatterns: ['*.spec.ts'],
   rules: {
     'no-restricted-syntax': 0,
     'guard-for-in': 0,
