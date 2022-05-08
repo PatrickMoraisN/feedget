@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { App } from '../../App';
 
 describe('<CloseButton />', () => {
-  it('Close correctly Widget', async () => {
+  it('Close Widget correctly', async () => {
     render(<App />);
 
     const widgetButton = document.querySelector(
