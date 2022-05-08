@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChatTeardropDots } from 'phosphor-react';
 import { Popover } from '@headlessui/react';
-import { WidgetForm } from './WidgetForm';
+import { WidgetForm } from '../WidgetForm';
 
 export function Widget() {
   return (
@@ -12,7 +12,7 @@ export function Widget() {
 
       <Popover.Button
         type='button'
-        className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group justify-items-end'
+        className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group justify-items-end widget-button'
       >
         <ChatTeardropDots className='w-6 h-6' />
 
