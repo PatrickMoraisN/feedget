@@ -20,7 +20,7 @@ export class SubmitFeedbackService {
       throw new Error(ErrorMsg.invalidComment);
     }
 
-    if (!screenshot || !screenshot.startsWith(imageStartFormat)) {
+    if (screenshot && !screenshot.startsWith(imageStartFormat)) {
       throw new Error(ErrorMsg.invalidScreenshot);
     }
 
@@ -30,12 +30,13 @@ export class SubmitFeedbackService {
       screenshot,
     });
 
-    await this.mailAdapter.sendMail({
+    this.mailAdapter.sendMail({
       subject: 'Novo Feedback',
       body: [
         '<div style="font-family: sans-serif; font-size: 16px; color: #222;">',
         `<p>Tipo do feedback: ${type}</p>`,
         `<p>Comentário: ${comment}</p>`,
+        screenshot ? `<img src="${screenshot}" />` : '',
         '</div>',
       ].join('\n'),
     });
