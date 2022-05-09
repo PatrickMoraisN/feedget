@@ -32,7 +32,7 @@ export function CameraButton({ onScreenshot, screenshot }: CameraButtonProps) {
         style={{
           backgroundImage: `url(${screenshot})`,
           backgroundPosition: 'right bottom',
-          backgroundSize: 180,
+          backgroundSize: 140,
         }}
         onClick={() => onScreenshot(null)}
       >
