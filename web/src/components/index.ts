@@ -5,3 +5,4 @@ export * from './Loading';
 export * from './steps';
 export * from './Widget';
 export * from './WidgetForm';
+export * from './Navbar';
