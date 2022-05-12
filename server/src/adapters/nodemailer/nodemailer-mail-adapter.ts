@@ -5,17 +5,19 @@ const transport = nodemailer.createTransport({
   host: 'smtp.mailtrap.io',
   port: 2525,
   auth: {
-    user: '0ba5ea66b6f0e2',
-    pass: '039da0d7bcefa5',
+    user: process.env.MAILTRAP_USER,
+    pass: process.env.MAILTRAP_PASS,
   },
 });
+
+console.log(process.env.MAILTRAP_USER);
 
 export class NodemailerMailAdapter implements MailAdapter {
   async sendMail(data: SendMailData) {
     const { subject, body } = data;
     transport.sendMail({
       from: 'Equipe Feedget <oi@feedget.com>',
-      to: 'Patrick Morais <patrick.nunes@remessaonline.com.br>',
+      to: 'Patrick Morais <ppternunes@gmail.com>',
       subject,
       html: body,
     });
