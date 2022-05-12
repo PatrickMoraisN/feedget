@@ -49,6 +49,8 @@ This project was developed with the following technologies: <br>
   - :heavy_check_mark: **Prisma**
   - :heavy_check_mark: **Jest**
   - :heavy_check_mark: **Express/Nodemailer/Cors**
+  - :heavy_check_mark: **ESLint**
+  - :heavy_check_mark: **Prettier**
 <br><br>
 <br />
 
