@@ -3,7 +3,7 @@
 
 # :pushpin: Index
 - [About](#monocle_face-about)
-- [Project Media](#camera_flash-project-media)
+- [Project Media](#camera_flash-media)
 - [Technologies](#rocket-technologies)
 - [Author](#closed_book-author)
 <br />
@@ -13,16 +13,16 @@
 # :monocle_face: About
 Project developed to practice the integration of React with Vercel, Mailtrap and Railway.
 
-In it you send feedback, being able to take screenshot of the screen.
+In it you send feedback, being able to take a screenshot.
 
-Hope you like it :D
+Hope you like :D
 
 ## [See it online!!](https://feedget-two-swart.vercel.app/)
 <br />
 
 ---
 
-# :camera_flash: Project Media
+# :camera_flash: Media
 ![Imagem do projeto](assets/image.png)
 
 ![Imagem do projeto](assets/feedget.gif)
@@ -35,20 +35,20 @@ Hope you like it :D
 This project was developed with the following technologies: <br>
 
   ## Front-end
-    - :heavy_check_mark: **React**
-    - :heavy_check_mark: **TypeScript**
-    - :heavy_check_mark: **Tailwind CSS**
-    - :heavy_check_mark: **Jest/React Testing Library**
-    - :heavy_check_mark: **Axios/SWC**
-    - :heavy_check_mark: **ESLint**
-    - :heavy_check_mark: **Prettier**
+  - :heavy_check_mark: **React**
+  - :heavy_check_mark: **TypeScript**
+  - :heavy_check_mark: **Tailwind CSS**
+  - :heavy_check_mark: **Jest/React Testing Library**
+  - :heavy_check_mark: **Axios/SWC**
+  - :heavy_check_mark: **ESLint**
+  - :heavy_check_mark: **Prettier**
 
   ## Back-end
-    - :heavy_check_mark: **Node**
-    - :heavy_check_mark: **TypeScript**
-    - :heavy_check_mark: **Prisma**
-    - :heavy_check_mark: **Jest**
-    - :heavy_check_mark: **Express/Nodemailer/Cors**
+  - :heavy_check_mark: **Node**
+  - :heavy_check_mark: **TypeScript**
+  - :heavy_check_mark: **Prisma**
+  - :heavy_check_mark: **Jest**
+  - :heavy_check_mark: **Express/Nodemailer/Cors**
 <br><br>
 <br />
 
